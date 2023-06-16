@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK GYM</title>
+</head>
+<link rel="stylesheet" href="BLACK GYM WEBSITE/BLACK GYM CSS.css">
+<style>
+    /* CSS RESET */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/pexels-victor-freitas-2261477.jpg');
+
+    }
+
+    .left {
+        color: aliceblue;
+        border: 3px solid rgb(224, 209, 209);
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 2px;
+        height: 120px;
+        width: 155px;
+        background: url('img/IMG_20230322_130650.jpg');
+        border-radius: 18px;
+
+    }
+
+    #logoname {
+        text-align: center;
+
+        font-size: 32px;
+        font-family: fantasy;
+    }
+
+    .right {
+        color: aliceblue;
+
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+
+    }
+
+    .btn {
+        margin: 22px 10px;
+        padding: 6px 7px;
+        background-color: rgb(73 62 62);
+        color: white;
+        border-radius: 18px;
+
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .top {
+        color: aliceblue;
+        /* border: 3px solid rgb(228, 18, 53); */
+        /* background-color: #ea3939; */
+        border-radius: 18px;
+        display: block;
+        width: 60%;
+        margin: 12px auto;
+        height: 70px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 10px 25px;
+
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(180, 40, 68);
+        /* text-decoration: underline;
+     */
+    }
+
+    .container {
+        border: 4px solid rgb(231, 232, 230);
+        margin: 100px 270px;
+        padding: 27px 64px;
+        width: 270px;
+        height: 314px;
+        color: aliceblue;
+        border-radius: 10px;
+    }
+
+    .form-group {
+
+        margin: 10px 2px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 236px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .btnsubmit {
+        background-color: rgb(24, 22, 22);
+        color: aliceblue;
+        width: 236px;
+        margin: 2px 4px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #optiongender {
+        width: 244px;
+        height: 18px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div id="logoname">
+                <p>BLACK GYM</p>
+
+            </div>
+
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+        <!-- for navbar -->
+        <div class="top">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Fitness Centres</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYM OF GHAZIABAD</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email Id ">
+
+            </div>
+            <div class="form-group">
+                <label for="Gender"></label>
+                <select name="Enter Your Gender" id="optiongender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <Option value="Other">Other</Option>
+                </select>
+
+            </div>
+            <button class="btnsubmit">Find Nearest Gym</button>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
